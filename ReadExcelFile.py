@@ -22,7 +22,7 @@ class ReadExcelFile:
         self.num_row = worksheet[0].nrows
         self.num_col = worksheet[0].ncols
 
-        for cur_row in range(1, self.num_row):
+        for cur_row in range(0, self.num_row):
             row = []
             for cur_col in range(0, self.num_col):
                 value = worksheet[0].cell_value(cur_row, cur_col)
